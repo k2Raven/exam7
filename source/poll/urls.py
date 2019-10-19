@@ -16,7 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from webapp.views import IndexView, PollView, PollCreateView, PollUpdateView, PollDeleteView
+from webapp.views import IndexView, PollView, PollCreateView, PollUpdateView, PollDeleteView,\
+    ChoiceCreateView, ChoiceUpdateView, ChoiceDeleteView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,5 +26,8 @@ urlpatterns = [
     path('poll/add', PollCreateView.as_view(), name='poll_create'),
     path('poll/<int:pk>/edit/', PollUpdateView.as_view(), name='poll_update'),
     path('poll/<int:pk>/delete/', PollDeleteView.as_view(), name='delete_poll'),
+    path('poll/<int:pk>/add-choice/', ChoiceCreateView.as_view(), name='choice_create'),
+    path('choice/<int:pk>/edit/', ChoiceUpdateView.as_view(), name='choice_update'),
+    path('choice/<int:pk>/delete/', ChoiceDeleteView.as_view(), name='delete_choice'),
 
 ]

@@ -1,5 +1,9 @@
 {% extends 'base.html' %}
 
+{% block button %}
+  <form  class="form-inline my-2 my-lg-0"><a href="{% url 'choice_create' poll.pk %}" class="btn btn-outline-info">Добавить вариант ответа</a></form>
+{% endblock %}
+
 {% block content %}
         <div class="col-sm-12">
             <div class="card m-1">
@@ -16,4 +20,23 @@
                 </div>
             </div>
         </div>
+        {% for choice in choices %}
+            <div class="col-sm-12">
+                <div class="card text-white bg-dark m-1">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ choice.option }}</h5>
+                        <div class="form-row align-items-center">
+                            <div class="col-auto my-1">
+                                <form><a href="{% url 'delete_choice' choice.pk %}" class="btn btn-danger">Удаление</a></form>
+                            </div>
+                            <div class="col-auto my-1">
+                                <form><a href="{% url 'choice_update' choice.pk %}" class="btn btn-success">Редаклирование</a></form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% empty %}
+            <p>Нет задачь</p>
+        {% endfor %}
 {% endblock %}
