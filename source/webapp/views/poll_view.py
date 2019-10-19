@@ -1,4 +1,5 @@
-from django.views.generic import ListView, DetailView
+from django.urls import reverse, reverse_lazy
+from django.views.generic import ListView, DetailView, CreateView
 
 from webapp.models import Poll
 
@@ -15,4 +16,12 @@ class IndexView(ListView):
 class PollView(DetailView):
     template_name = 'poll/poll.html'
     model = Poll
-    pk_url_kwarg = 'poll_pk'
+
+
+class PollCreateView(CreateView):
+    template_name = 'poll/create.html'
+    model = Poll
+    fields = ['question']
+
+    def get_success_url(self):
+        return reverse('poll_view', kwargs={'pk': self.object.pk})
