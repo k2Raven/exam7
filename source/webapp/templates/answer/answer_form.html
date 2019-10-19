@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+    {% csrf_token %}
+    {% load widget_tweaks %}
+    {% block content %}
+        <form method="POST" action="{% url 'answer' poll.pk %}">
+        {% csrf_token %}
+            <div class="card m-2">
+                <div class="card-header">
+                    <label  class="card-title">{{ poll.question }}</label>
+                </div>
+                <div class="card-body">
+                        <div class="form-group row">
+                            {% for error in field.errors %}
+                                <p class="form-error">{{ error }}</p>
+                            {% endfor %}
+                            {% for choice in choices %}
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="choice" value='{{ choice.pk }}'>
+                                  <label class="form-check-label" >
+                                    {{ choice.option }}
+                                  </label>
+                                </div>
+                            {% endfor %}
+                        </div>
+                        <div class="form-row align-items-center">
+                            <div class="col-auto my-1">
+                                <button class="btn btn-primary">Ответ</button>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </form>
+    {% endblock %}

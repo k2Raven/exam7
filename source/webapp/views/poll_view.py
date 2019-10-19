@@ -30,7 +30,6 @@ class PollView(DetailView):
 class PollCreateView(CreateView):
     template_name = 'poll/create.html'
     model = Poll
-    fields = ['question']
     form_class = PollForm
 
     def get_success_url(self):
