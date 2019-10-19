@@ -1,0 +1,196 @@
+[
+{
+  "model": "webapp.poll",
+  "pk": 7,
+  "fields": {
+    "question": "\u041a\u0430\u043a \u0432\u044b \u0440\u0430\u0441\u0441\u043c\u0430\u0442\u0440\u0438\u0432\u0430\u0435\u0442\u0435 \u044d\u043a\u043e\u043d\u043e\u043c\u0438\u0447\u0435\u0441\u043a\u043e\u0435 \u043f\u043e\u043b\u043e\u0436\u0435\u043d\u0438\u0435 \u0432 \u0441\u0442\u0440\u0430\u043d\u0435 ?",
+    "created_at": "2019-10-19T06:53:34.373Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 8,
+  "fields": {
+    "question": "\u0412\u044b \u0431\u043e\u0438\u0442\u0435\u0441\u044c \u043f\u043e\u0440\u0430\u0431\u043e\u0449\u0435\u043d\u0438\u044f \u043c\u0438\u0440\u0430 \u0440\u043e\u0431\u043e\u0442\u0430\u043c\u0438 ?",
+    "created_at": "2019-10-19T06:54:33.200Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 9,
+  "fields": {
+    "question": "\u0412\u044b \u0436\u0438\u0432\u0435\u0442\u0435 \u0432 \u043c\u0430\u0442\u0440\u0438\u0446\u0435 ?",
+    "created_at": "2019-10-19T06:55:22.993Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 10,
+  "fields": {
+    "question": "\u041a\u0430\u043a \u0432\u044b \u0434\u0443\u043c\u0430\u0435\u0442\u0435 \u0437\u0430 \u0432\u0430\u043c\u0438 \u0441\u043b\u0435\u0434\u044f\u0442 ?",
+    "created_at": "2019-10-19T06:55:46.024Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 11,
+  "fields": {
+    "question": "\u041a\u0442\u043e \u043b\u0443\u0447\u0448\u0435 \u0441\u043e\u0431\u0430\u043a\u0438 \u0438\u043b\u0438 \u043a\u043e\u0448\u043a\u0438 ?",
+    "created_at": "2019-10-19T06:56:37.441Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 12,
+  "fields": {
+    "question": "\u041a\u043e\u0448\u043a\u0438 \u0437\u0430\u0445\u0432\u0430\u0442\u044f\u0442 \u043c\u0438\u0440 , \u0432\u044b \u0441 \u044d\u0442\u0438\u043c \u0441\u043c\u0435\u0440\u0438\u043b\u0438\u0441\u044c ?",
+    "created_at": "2019-10-19T06:57:24.230Z"
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 1,
+  "fields": {
+    "option": "\u041c\u043d\u0435 \u043d\u0435 \u0434\u043e \u044d\u0442\u043e\u0433\u043e \u044f \u0443\u0447\u0443\u0441\u044c \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u0438\u0440\u043e\u0432\u0430\u0442\u044c !",
+    "poll": 7
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 2,
+  "fields": {
+    "option": "\u0412\u0441\u0435 \u0438\u0434\u0435\u0442 \u043f\u043e\u0434 \u043e\u0442\u043a\u043e\u0441",
+    "poll": 7
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 3,
+  "fields": {
+    "option": "\u0423 \u043d\u0430\u0441 \u0432\u0441\u0435 \u0445\u043e\u0440\u043e\u0448\u043e",
+    "poll": 7
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 4,
+  "fields": {
+    "option": "\u0410 \u0440\u0430\u0437\u0432\u0435 \u043c\u0438\u0440\u043e\u043c \u043d\u0435 \u043f\u0440\u0430\u0432\u0438\u0442 \u0438\u0441\u043a\u0443\u0441\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0439 \u0438\u043d\u0442\u0435\u043b\u043b\u0435\u043a\u0442",
+    "poll": 8
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 5,
+  "fields": {
+    "option": "\u041d\u0435 \u0431\u043e\u044e\u0441\u044c",
+    "poll": 8
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 6,
+  "fields": {
+    "option": "\u041d\u0435 \u0431\u043e\u044e\u0441\u044c ( \u0437\u0430 \u0434\u0440\u0443\u0433\u043e\u0439 \u043e\u0442\u0432\u0435\u0442 \u043c\u0435\u043d\u044f \u0443\u0434\u0430\u043b\u044f\u0442)",
+    "poll": 8
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 7,
+  "fields": {
+    "option": "\u042f \u041d\u0435\u043e",
+    "poll": 9
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 8,
+  "fields": {
+    "option": "\u0414\u0430",
+    "poll": 9
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 9,
+  "fields": {
+    "option": "\u041d\u0435\u0442",
+    "poll": 9
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 10,
+  "fields": {
+    "option": "\u0414\u0430",
+    "poll": 10
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 11,
+  "fields": {
+    "option": "\u041d\u0435\u0442",
+    "poll": 10
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 12,
+  "fields": {
+    "option": "\u0414\u0430. \u0412\u0430\u043c \u0447\u0442\u043e-\u0442\u043e \u0438\u0437\u0432\u0435\u0441\u0442\u043d\u043e?",
+    "poll": 10
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 13,
+  "fields": {
+    "option": "\u041a\u043e\u0448\u043a\u0438",
+    "poll": 11
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 14,
+  "fields": {
+    "option": "\u0421\u043e\u0431\u0430\u043a\u0438",
+    "poll": 11
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 15,
+  "fields": {
+    "option": "\u0414\u0430",
+    "poll": 12
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 16,
+  "fields": {
+    "option": "\u041d\u0435\u0442",
+    "poll": 12
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$ZAB0UPi9uZ2F$JQ6A3jHmvqoVKj+yZMRtgVruVLgr+hu+XPwqqPPHLbE=",
+    "last_login": "2019-10-19T06:46:11.952Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2019-10-19T06:45:40.349Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
