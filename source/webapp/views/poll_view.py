@@ -1,4 +1,4 @@
-from django.urls import reverse
+from django.urls import reverse, reverse_lazy
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 
 from webapp.models import Poll
@@ -37,3 +37,10 @@ class PollUpdateView(UpdateView):
 
     def get_success_url(self):
         return reverse('poll_view', kwargs={'pk': self.object.pk})
+
+
+class PollDeleteView(DeleteView):
+    template_name = 'poll/delete.html'
+    model = Poll
+    context_object_name = 'poll'
+    success_url = reverse_lazy('index')
