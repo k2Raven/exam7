@@ -22,7 +22,7 @@
                             <form><a href="{% url 'poll_view' poll.pk %}" class="btn btn-primary">Подробнее</a></form>
                         </div>
                         <div class="col-auto my-1">
-                            <form><a href="*" class="btn btn-success">Редаклирование</a></form>
+                            <form><a href="{% url 'poll_update' poll.pk %}" class="btn btn-success">Редаклирование</a></form>
                         </div>
                     </div>
                 </div>
